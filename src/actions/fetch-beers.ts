@@ -9,7 +9,7 @@ export async function fetchBeers(page: number) {
     const response = await fetch(apiUrl);
     const data = await response.json();
 
-    return data as Beer;
+    return data as Beer[];
   } catch (error) {
     console.log("Error fetching data... ", error);
 
